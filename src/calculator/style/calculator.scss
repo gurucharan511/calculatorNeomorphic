@@ -2,9 +2,16 @@
   display: grid;
   justify-content: center;
   align-content: center;
-  min-height: 100vh;
+  min-height: 50vh;
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  height: 80vh;
+  width: 50vh;
+  left: 35%;
+  top: 50%;
+  box-shadow: inset #a0a0a0 18px 1px 12px, inset #4d4d4d 3px 3px 12px;
+  position: relative;
+  margin: 20px;
 }
 
 .calculatorGrid > button {
