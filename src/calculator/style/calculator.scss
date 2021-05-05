@@ -18,11 +18,13 @@
   box-shadow: #000000 4px 4px 8px, #4d4d4d -4px -4px 8px;
   outline: none;
   border: black;
+  user-select: none;
 }
 
-.calculatorGrid > button:hover {
+.calculatorGrid > button:active {
   background: #262626;
-  box-shadow: #000000 0px 0px 5px, #4d4d4d -7px -4px 8px;
+  box-shadow: #000000 4px 4px 8px, #4d4d4d -4px -4px 8px,
+    inset #000000 4px 4px 8px, inset #4d4d4d -4px -4px 8px;
 }
 
 .span-two {
