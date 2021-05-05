@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./style/calculator.css";
+import "./style/calculator.scss";
 
 export default function Calculator() {
   const [prevOpr, setPrevOpr] = useState("");
@@ -62,7 +62,7 @@ export default function Calculator() {
       case "*":
         computation = prev * current;
         break;
-      case "/":
+      case "÷":
         computation = prev / current;
         break;
       default:
@@ -91,8 +91,8 @@ export default function Calculator() {
       <button data="data-delete" onClick={() => deleteNum()}>
         DEL
       </button>
-      <button data="data-operation" onClick={() => chooseOperation("/")}>
-        /
+      <button data="data-operation" onClick={() => chooseOperation("÷")}>
+        ÷
       </button>
       <button data="data-number" onClick={() => appendNumber(1)}>
         1
